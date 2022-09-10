@@ -14,7 +14,7 @@ class _homeScreenState extends State<homeScreen> {
       appBar: AppBar(
         centerTitle: true,
         title: Text('Hola mundo $currentPage'),
-        elevation: 0,
+        elevation: 10,
       ),
 
       /* body: currentPage == 0
@@ -30,6 +30,14 @@ class _homeScreenState extends State<homeScreen> {
           CustomScreen(color: Colors.indigo),
           CustomScreen(color: Colors.pink)
         ],
+      ),
+
+      floatingActionButton: FloatingActionButton(
+        onPressed: null,
+        child: Icon(Icons.delete_forever),
+        backgroundColor: Colors.pink,
+        foregroundColor: Colors.deepPurple,
+        elevation: 20,
       ),
       // * tabs
       bottomNavigationBar: BottomNavigationBar(
